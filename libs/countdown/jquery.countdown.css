@@ -1,83 +1,50 @@
-.countdownHolder{
-	width:450px;
-	margin:0 auto;
-	font: 40px/1.5 'Open Sans Condensed',sans-serif;
-	text-align:center;
-	letter-spacing:-3px;
-}
-
-.position{
-	display: inline-block;
-	height: 1.6em;
-	overflow: hidden;
-	position: relative;
-	width: 1.05em;
-}
-
-.digit{
-	position:absolute;
-	display:block;
-	width:1em;
-	background-color:#444;
-	border-radius:0.2em;
-	text-align:center;
-	color:#fff;
-	letter-spacing:-1px;
-}
-
-.digit.static{
-	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.35);
+/* jQuery Countdown styles 2.0.0. */
+.is-countdown {
 	
-	background-image: linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
-	background-image: -o-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
-	background-image: -moz-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
-	background-image: -webkit-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
-	background-image: -ms-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
-	
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.5, #3A3A3A),
-		color-stop(0.5, #444444)
-	);
 }
-
-/**
- * You can use these classes to hide parts
- * of the countdown that you don't need.
- */
-
-.countDays{ /* display:none !important;*/ }
-.countDiv0{ /* display:none !important;*/ }
-.countHours{}
-.countDiv1{}
-.countMinutes{}
-.countDiv2{}
-.countSeconds{}
-
-
-.countDiv{
-	display:inline-block;
-	width:16px;
-	height:1.6em;
-	position:relative;
+.countdown-rtl {
+	direction: rtl;
 }
-
-.countDiv:before,
-.countDiv:after{
-	position:absolute;
-	width:5px;
-	height:5px;
-	background-color:#444;
-	border-radius:50%;
-	left:50%;
-	margin-left:-3px;
-	top:0.5em;
-	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
-	content:'';
+.countdown-holding span {
+	color: #888;
 }
-
-.countDiv:after{
-	top:0.9em;
+.countdown-row {
+	clear: both;
+	width: 100%;
+	padding: 0px 2px;
+	text-align: center;
+}
+.countdown-show1 .countdown-section {
+	width: 98%;
+}
+.countdown-show2 .countdown-section {
+	width: 48%;
+}
+.countdown-show3 .countdown-section {
+	width: 32.5%;
+}
+.countdown-show4 .countdown-section {
+	width: 24.5%;
+}
+.countdown-show5 .countdown-section {
+	width: 19.5%;
+}
+.countdown-show6 .countdown-section {
+	width: 16.25%;
+}
+.countdown-show7 .countdown-section {
+	width: 14%;
+}
+.countdown-section {
+	display: block;
+	float: left;
+	font-size: 75%;
+	text-align: center;
+}
+.countdown-amount {
+	font-size: 200%;
+}
+.countdown-period {
+	display: block;
+	font-size: 14px;
 }
